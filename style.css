@@ -1,17 +1,29 @@
-*{
-    border: none;
+/* CSS file with main aesthetic definitions for the webpage */
+/* Felipe J. O. Ribeiro */
+/* Version 1.0 */
+
+/*! Global configuration */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    /* border: 1px solid; */
+    padding: 0px;
+    margin: 0px;
 }
 
+/*! Elements general configuration */
+/* body configuration */
 body{
-    font: 'Raleway', sans-serif;
-    color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
-    top: 15%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(to right, red , yellow);
 }
 
+/* Main header of the page */
 h1{
     font: 600 3.5em 'Raleway', sans-serif;
     color: rgba(0, 0, 0, .5);
@@ -21,17 +33,32 @@ h1{
     width: 100%;
 }
 
+/* Buttons configuration */
 button:focus { outline-style: none; }
 
 button{
     font: 900 1em 'Raleway' , sans-serif;
     background: rgba(13, 13, 13, 0.2);
     border: none;
+    width: 50%;
+    min-width: fit-content;
     text-decoration: none;
     white-space: pre;
-    border-radius: 4em;
+    border-radius: 2em;
     color: rgba(0, 0, 0, .5);
     text-align: center;
     text-transform: none;
     letter-spacing: 0.01em;   
 }
+
+/*! classes configuration */
+.container{
+    max-width: 900px;
+    font: 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+
